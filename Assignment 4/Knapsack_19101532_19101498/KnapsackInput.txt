@@ -1,0 +1,83 @@
+:::::::::::Problem01::::::::::
+This problem is based on 0/1 knapsack Algorithm. As I have to buy a sum of players with maximum form within 150 million, I have run knapsack algorithm to find the result.For forming knapsack algorithm, I have to take extra one index in the arrays. In the knapsack method, Firstly I put 0 on 0 column and 0 row of the matrix. Then I checked if current value which means the column number which was created based on the given money limt 150 is less than given price of each player. If it was less then I put in that index the value from upper index. If this is not not the case I have to check which one is bigger among current price or price from previous index and I put that value in the running index. 
+Then my task was to print which players Jose can buy. For this task I took an array and I ran a method called printItem in which I checked if the value came from previous index or not. If it is from previous index, then it is not its value, if it is unique value in that index then it is it's own value.In this case I took that index and go to playerName array to find the player name and put that in the finalBuy array. Then my task was to print the finalBuy array.
+
+//here the inputs.
+
+6//number of players
+150//money Jose can spend
+
+nothing
+0
+0
+Aubameyang 
+80 
+96
+Koulibaly 
+70
+94 
+Thiago 
+45
+83
+Insigne 
+50
+87 
+Kimmich
+40 
+85 
+Sancho
+60 
+89
+ 
+// You can suffle the players positon as well
+
+
+nothing
+0
+0
+Koulibaly 
+70
+94 
+Thiago 
+45
+83
+Insigne 
+50
+87 
+Kimmich
+40 
+85 
+Sancho
+60 
+89
+Aubameyang 
+80 
+96
+
+
+:::::::::::::Problem02::::::::::::::
+
+Task 2 is similar like task 1. But one condition is to fulfilled here that is I have to take one Champions league trophy for sure. For this reason, I ran knapsack twice, one for Porto and one for Inter Milan. When I took porto, I put 1 in the weight array to avoid over price because when I took porto, total weight was calculated without porto's weight that is 15-4, and it is for Inter milan also.
+
+
+ nothing
+ 0
+ 0 
+ Chelsea
+ 8 
+ 9.6
+ Inter Milan
+ 7 
+ 9.4
+ Individual
+ 5 
+ 8.3 
+ Real Madrid
+ 5 
+ 8.7 
+Porto
+ 4
+ 8.5 
+ Manchester United
+ 6
+ 8.9 
